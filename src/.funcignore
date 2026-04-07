@@ -1,0 +1,36 @@
+# Git
+.git*
+.gitignore
+
+# Visual Studio Code
+.vscode/
+
+# Azure Storage Emulator
+__azurite_db*__.json
+__blobstorage__
+__queuestorage__
+
+# Local settings (contains secrets)
+local.settings.json
+
+# Testing
+test/
+tests/
+
+# Environment files
+.env
+.env.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
