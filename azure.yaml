@@ -6,5 +6,6 @@ metadata:
 services:
   processor:
     project: ./src/
-    language: ps
+    language: custom
     host: function
+    dist: ./src
