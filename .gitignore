@@ -416,3 +416,9 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Azure Developer CLI
+.azure/
+
+# npm artifact from language: js workaround
+package-lock.json
