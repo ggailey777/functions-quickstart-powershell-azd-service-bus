@@ -11,6 +11,16 @@
 *.sln.docstates
 *.env
 
+local.settings.json
+send-message.sh
+send-message.ps1
+
+# Azurite
+__blobstorage__/
+__queuestorage__/
+__azurite_db_*__.json
+AzuriteConfig
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 

@@ -3,9 +3,24 @@
 name: functions-e2e-sb-vnet-powershell
 metadata:
     template: functions-e2e-sb-vnet-powershell@0.0.1
+infra:
+  provider: bicep
+  path: infra
 services:
   processor:
     project: ./src/
     language: custom
     host: function
     dist: ./src
+hooks:
+  postprovision:
+    windows:
+      shell: pwsh
+      run: .\infra\scripts\postprovision.ps1
+      interactive: true
+      continueOnError: false
+    posix:
+      shell: sh
+      run: chmod +x ./infra/scripts/*.sh && ./infra/scripts/postprovision.sh
+      interactive: true
+      continueOnError: false
